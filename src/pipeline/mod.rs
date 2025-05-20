@@ -7,6 +7,7 @@ pub use physics_pipeline::PhysicsPipeline;
 pub use query_pipeline::{
     generators as query_pipeline_generators, QueryFilter, QueryFilterFlags, QueryPipeline,
 };
+pub use world::*;
 
 #[cfg(feature = "debug-render")]
 pub use self::debug_render_pipeline::{
@@ -20,6 +21,7 @@ mod physics_hooks;
 mod physics_pipeline;
 mod query_pipeline;
 mod user_changes;
+mod world;
 
 #[cfg(feature = "debug-render")]
 mod debug_render_pipeline;
